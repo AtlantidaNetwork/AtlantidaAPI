@@ -1,0 +1,5 @@
+name: AtlantidaAPI
+version: 1.0-SNAPSHOT
+main: com.atlantida.api.Atlantida
+author: Ciber
+description: Api para desenvolvimento de plugins do Atlantida Network
