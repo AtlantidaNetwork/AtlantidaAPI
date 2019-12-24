@@ -15,6 +15,6 @@ public class Atlantida extends AtlantidaPlugin {
 
     @Override
     public void onDisable() {
-        msg("§6[AtlantidaAPI] §3Api desabilitada.");
+        msg("§6[AtlantidaAPI] §4Api desabilitada.");
     }
 }

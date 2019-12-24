@@ -27,7 +27,7 @@ afterEvaluate {
         manifest {
             attributes 'Main-Class': 'com.github.atlantidanetwork.api.CiberAPI'
         }
-        setLibsDirName("/home/ciber/Projetos/Projetos Minecraft/Minecraft Server/Plugins/PluginsAPI")
+        setLibsDirName("/home/ciber/Projetos/Projetos Minecraft/Minecraft Server/Servers/1.8/AtlantidaTestes/plugins/")
     }
 }
 */
