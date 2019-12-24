@@ -1,7 +1,6 @@
-package com.atlantida.api.lib.plugin;
+package com.github.atlantidanetwork.api.lib.plugin;
 
-import com.atlantida.api.Atlantida;
-import com.atlantida.api.lib.command.AtlantidaCommand;
+import com.github.atlantidanetwork.api.lib.command.AtlantidaCommand;
 import org.bukkit.Server;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandMap;
@@ -24,7 +23,7 @@ import java.util.logging.Level;
 public abstract class AtlantidaPlugin extends JavaPlugin {
 
     private boolean debug = false;
-    private String defaultPackage = "com.ciber.plugins.%s";
+    private String defaultPackage = "com.github.atlantidanetwork.%s";
     private String pluginURI = "api";
     private String pluginPackage;
 

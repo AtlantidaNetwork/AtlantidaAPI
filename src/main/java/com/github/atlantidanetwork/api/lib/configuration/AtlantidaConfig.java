@@ -1,6 +1,5 @@
-package com.atlantida.api.lib.configuration;
+package com.github.atlantidanetwork.api.lib.configuration;
 
-import com.atlantida.api.Atlantida;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 

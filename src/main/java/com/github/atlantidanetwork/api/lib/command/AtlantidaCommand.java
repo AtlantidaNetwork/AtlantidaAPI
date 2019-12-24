@@ -1,4 +1,4 @@
-package com.atlantida.api.lib.command;
+package com.github.atlantidanetwork.api.lib.command;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.defaults.BukkitCommand;
