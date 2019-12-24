@@ -14,7 +14,7 @@ repositories {
     maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
-
+/*
 afterEvaluate {
     jar {
 
@@ -37,7 +37,7 @@ afterEvaluate {
 
     }
 }
-
+*/
 dependencies {
     compile 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
     compile 'org.mongodb:mongodb-driver-legacy:3.12.0'

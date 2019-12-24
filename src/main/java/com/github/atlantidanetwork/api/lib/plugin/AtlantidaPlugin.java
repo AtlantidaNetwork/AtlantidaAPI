@@ -23,19 +23,27 @@ import java.util.logging.Level;
 public abstract class AtlantidaPlugin extends JavaPlugin {
 
     private boolean debug = false;
+    @Deprecated
     private String defaultPackage = "com.github.atlantidanetwork.%s";
     private String pluginURI = "api";
-    private String pluginPackage;
+    private String pluginPackage = "com.github.atlantidanetwork.api";
 
+    @Deprecated
     public AtlantidaPlugin(String pluginURI) {
         this.pluginURI = pluginURI;
         this.pluginPackage = String.format(getDefaultPackage(), getPluginURI());
     }
 
+    @Deprecated
     public AtlantidaPlugin(String pluginURI, String defaultPackage) {
         this.pluginURI = pluginURI;
         this.defaultPackage = defaultPackage;
         this.pluginPackage = String.format(getDefaultPackage(), getPluginURI());
+    }
+
+    public AtlantidaPlugin(Class<?> c) {
+        this.pluginPackage = c.getPackage().getName();
+        this.pluginURI = pluginPackage.substring(pluginPackage.lastIndexOf('.') + 1);
     }
 
     protected <T extends AtlantidaPlugin> void listener(Listener listener, T plugin) {
