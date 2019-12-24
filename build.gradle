@@ -15,29 +15,6 @@ repositories {
     maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
-afterEvaluate {
-    jar {
-
-        exclude "META-INF/*.SF"
-        exclude "META-INF/*.DSA"
-        exclude "META-INF/*.RSA"
-
-        archivesBaseName = "CiberAPI"
-        project.version = "1.0.R0-SNAPSHOT"
-
-        manifest {
-            attributes 'Main-Class': 'com.ciber.api.CiberAPI'
-        }
-
-        setLibsDirName("/home/ciber/Projetos/Projetos Minecraft/Minecraft Server/Plugins/PluginsAPI")
-
-        from {
-            configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-        }
-
-    }
-}
-
 dependencies {
     compile 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
     compile 'com.google.guava:guava:18.0'
