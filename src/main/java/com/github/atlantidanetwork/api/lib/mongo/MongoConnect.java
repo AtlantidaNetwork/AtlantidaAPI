@@ -34,20 +34,11 @@ public class MongoConnect {
             String pass = mongoConfig.getString("mongo.password");
             String cluster = mongoConfig.getString("mongo.cluster");
             String dataBaseName = mongoConfig.getString("mongo.data-base");
-            String collectionName = mongoConfig.getString("mongo.collection");
             mongoUri = new MongoClientURI("mongodb+srv://" + user + ":" + pass + "@" + cluster + "-0fu2q.gcp.mongodb.net/test");
             mongoClient = new MongoClient(mongoUri);
             dataBase = mongoClient.getDatabase(dataBaseName);
-            try {
-                collection = dataBase.getCollection(collectionName);
-            }catch (Exception e) {
-                dataBase.createCollection(collectionName);
-                collection = dataBase.getCollection(collectionName);
-                Bukkit.getConsoleSender().sendMessage("§2[MongoDB] §3Collection §6" + collectionName + " §3criada por plugin §6" + plugin.getName());
-            }
-            Bukkit.getConsoleSender().sendMessage("§2[MongoDB] §3Banco de dados §6" + dataBaseName + " §3conectado com sucesso.");
         }catch (Exception e) {
-            Bukkit.getConsoleSender().sendMessage("§2[MongoDB] §4Nao foi possivel se conectar ao banco de dados \n§4dados inseridos na §6mongo.yml incorretos.");
+            Bukkit.getConsoleSender().sendMessage("§2[MongoDB] §4Nao foi possivel se conectar ao banco de dados.");
             e.printStackTrace();
         }
     }

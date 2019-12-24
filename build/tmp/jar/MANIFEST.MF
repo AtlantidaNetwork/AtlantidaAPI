@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: com.github.atlantidanetwork.api.CiberAPI
+Main-Class: com.github.atlantidanetwork.api.AtlantidaAPI
 
