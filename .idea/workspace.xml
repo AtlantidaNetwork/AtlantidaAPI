@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af120fe6-4086-4bd3-ad8a-82a69b91920b" name="Default Changelist" comment="Atualização para gradle repositorio com JitPack">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-    </list>
+    <list default="true" id="af120fe6-4086-4bd3-ad8a-82a69b91920b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,6 +121,21 @@
       <option name="presentableId" value="Default" />
       <updated>1577132064648</updated>
     </task>
+    <task id="LOCAL-00001" summary="Atualização para gradle repositorio com JitPack">
+      <created>1577145997819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1577145997819</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Atualização para gradle repositorio com JitPack">
+      <created>1577146114911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577146114911</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -145,10 +152,10 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="495" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.732@0.0.1366.732" timestamp="1577137795324" />
-    <state x="176" y="0" key="CommitChangelistDialog2" timestamp="1577145997429">
+    <state x="176" y="0" key="CommitChangelistDialog2" timestamp="1577146114586">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="176" y="0" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1577145997429" />
+    <state x="176" y="0" key="CommitChangelistDialog2/0.0.1366.732@0.0.1366.732" timestamp="1577146114586" />
     <state width="1320" height="175" key="GridCell.Tab.0.bottom" timestamp="1577143165821">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
