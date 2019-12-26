@@ -20,18 +20,13 @@ public class MongoConnect {
     public void connect (Plugin plugin) {
         mongoConfig = new AtlantidaConfig(plugin, "mongo.yml");
         if(!new File(plugin.getDataFolder(), "mongo.yml").exists()) {
-            mongoConfig.set("mongo.user", "<user>");
-            mongoConfig.set("mongo.password", "<password>");
-            mongoConfig.set("mongo.cluster", "<cluster>");
-            mongoConfig.set("mongo.data-base", "<data-base>");
+            mongoConfig.set("uri", "<mongo-uri do seu banco de dados>");
+            mongoConfig.set("mongo.data-base", "<sua data-base>");
             mongoConfig.saveConfig();
         }
         try {
-            String user = mongoConfig.getString("mongo.user");
-            String pass = mongoConfig.getString("mongo.password");
-            String cluster = mongoConfig.getString("mongo.cluster");
             String dataBaseName = mongoConfig.getString("mongo.data-base");
-            mongoUri = new MongoClientURI("mongodb+srv://" + user + ":" + pass + "@" + cluster + "-0fu2q.gcp.mongodb.net/test");
+            mongoUri = new MongoClientURI("mongo.uri");
             mongoClient = new MongoClient(mongoUri);
             dataBase = mongoClient.getDatabase(dataBaseName);
             Bukkit.getConsoleSender().sendMessage("§2[MongoDB] §3Banco de dados §6" + dataBaseName + " §3conectado com sucesso.");
